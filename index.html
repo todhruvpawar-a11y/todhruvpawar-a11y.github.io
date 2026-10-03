@@ -1,0 +1,94 @@
+```html
+<!-- Hero -->
+<header class="hero">
+
+    <div class="hero-content">
+
+        <div class="intro">
+            Finance • Analytics • Technology
+        </div>
+
+        <h1>
+            Hi, I'm Dhruv.<br>
+            I build things with <span>finance & data.</span>
+        </h1>
+
+        <p>
+            I'm a Finance student at Rutgers University interested in
+            financial analysis, investments, operations, and using
+            technology to solve real-world problems.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#projects" class="button primary">
+                View My Projects
+            </a>
+
+            <a href="#contact" class="button secondary">
+                Get In Touch
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Headshot -->
+    <div class="headshot-container">
+        <img
+            src="headshot.jpg"
+            alt="Headshot of Dhruv Pawar"
+            class="headshot"
+        >
+    </div>
+
+</header>
+```
+
+Then add this CSS to your existing `<style>` section:
+
+```css
+/* Headshot */
+.hero {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 80px 8%;
+    background:
+        radial-gradient(circle at 85% 25%, #dbeafe 0, transparent 25%),
+        #f8fafc;
+}
+
+.headshot-container {
+    flex-shrink: 0;
+}
+
+.headshot {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid white;
+    box-shadow: 0 15px 40px rgba(23, 32, 51, 0.15);
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 60px 6%;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headshot {
+        width: 220px;
+        height: 220px;
+    }
+}
+```
