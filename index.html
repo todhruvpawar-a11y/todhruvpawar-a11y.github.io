@@ -1,94 +1,329 @@
 ```html
-<!-- Hero -->
-<header class="hero">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <div class="hero-content">
+    <title>Dhruv Pawar | Finance Portfolio</title>
 
-        <div class="intro">
-            Finance • Analytics • Technology
+    <!-- Connects the CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">Dhruv<span>.</span></a>
+
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="hero-container">
+
+            <div class="hero-text">
+
+                <div class="eyebrow">
+                    Finance • Analytics • Technology
+                </div>
+
+                <h1>
+                    Hi, I'm Dhruv.<br>
+                    I build with <span>finance & data.</span>
+                </h1>
+
+                <p class="hero-description">
+                    I'm a Finance student at Rutgers University interested
+                    in financial analysis, investments, operations, and
+                    using technology to solve real-world problems.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="button button-primary">
+                        View My Projects
+                    </a>
+
+                    <a href="#contact" class="button button-secondary">
+                        Get In Touch
+                    </a>
+                </div>
+
+            </div>
+
+
+            <!-- Headshot -->
+            <div class="headshot-area">
+                <div class="headshot-wrapper">
+                    <img
+                        src="headshot.png"
+                        alt="Headshot of Dhruv Pawar"
+                        class="headshot"
+                    >
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- About -->
+    <section id="about" class="about">
+
+        <div class="container">
+
+            <div class="section-label">
+                About Me
+            </div>
+
+            <div class="about-grid">
+
+                <div>
+                    <h2 class="section-title">
+                        Personal<br>
+                        Statement
+                    </h2>
+                </div>
+
+                <div class="about-text">
+
+                    <p class="about-intro">
+                        I am a Finance student at Rutgers University
+                        passionate about financial analysis, investments,
+                        and using data to make better business decisions.
+                    </p>
+
+                    <p>
+                        Through coursework, projects, and extracurricular
+                        experiences, I have developed an interest in
+                        combining financial knowledge with technology
+                        and analytical problem-solving.
+                    </p>
+
+                    <p>
+                        I enjoy building projects that turn financial
+                        concepts and real-world data into practical,
+                        easy-to-understand tools.
+                    </p>
+
+                </div>
+
+            </div>
+
         </div>
 
-        <h1>
-            Hi, I'm Dhruv.<br>
-            I build things with <span>finance & data.</span>
-        </h1>
+    </section>
 
-        <p>
-            I'm a Finance student at Rutgers University interested in
-            financial analysis, investments, operations, and using
-            technology to solve real-world problems.
-        </p>
 
-        <div class="hero-buttons">
-            <a href="#projects" class="button primary">
-                View My Projects
-            </a>
+    <!-- Skills -->
+    <section id="skills" class="skills">
 
-            <a href="#contact" class="button secondary">
-                Get In Touch
-            </a>
+        <div class="container">
+
+            <div class="section-label">
+                What I Bring
+            </div>
+
+            <h2 class="section-title">
+                Skills
+            </h2>
+
+            <p class="skills-intro">
+                A combination of financial, analytical, technical,
+                and professional skills that I continue to develop
+                through coursework and hands-on projects.
+            </p>
+
+            <div class="skills-list">
+
+                <div class="skill">Financial Analysis</div>
+                <div class="skill">Financial Modeling</div>
+                <div class="skill">Equity Research</div>
+                <div class="skill">Excel</div>
+                <div class="skill">Data Analysis</div>
+                <div class="skill">HTML & CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">Microsoft Office</div>
+                <div class="skill">Problem Solving</div>
+                <div class="skill">Communication</div>
+                <div class="skill">Teamwork</div>
+
+            </div>
+
         </div>
 
-    </div>
+    </section>
 
-    <!-- Headshot -->
-    <div class="headshot-container">
-        <img
-            src="headshot.png"
-            alt="Headshot of Dhruv Pawar"
-            class="headshot"
-        >
-    </div>
 
-</header>
-```
+    <!-- Projects -->
+    <section id="projects" class="projects">
 
-Then add this CSS to your existing `<style>` section:
+        <div class="container">
 
-```css
-/* Headshot */
-.hero {
-    min-height: 75vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 60px;
-    padding: 80px 8%;
-    background:
-        radial-gradient(circle at 85% 25%, #dbeafe 0, transparent 25%),
-        #f8fafc;
-}
+            <div class="section-label">
+                Selected Work
+            </div>
 
-.headshot-container {
-    flex-shrink: 0;
-}
+            <h2 class="section-title">
+                Projects
+            </h2>
 
-.headshot {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 8px solid white;
-    box-shadow: 0 15px 40px rgba(23, 32, 51, 0.15);
-}
+            <p class="projects-intro">
+                A few projects where I've combined finance, data,
+                technology, and personal interests to build
+                practical interactive tools.
+            </p>
 
-/* Mobile */
-@media (max-width: 800px) {
-    .hero {
-        flex-direction: column-reverse;
-        text-align: center;
-        padding: 60px 6%;
-    }
 
-    .hero-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+            <div class="project-grid">
 
-    .headshot {
-        width: 220px;
-        height: 220px;
-    }
-}
+                <!-- ETF Project -->
+                <article class="project-card">
+
+                    <div class="project-number">
+                        01 / INVESTMENTS
+                    </div>
+
+                    <h3>
+                        ETF Portfolio Analyzer
+                    </h3>
+
+                    <p>
+                        Interactive tool for comparing ETFs and
+                        modeling hypothetical portfolio allocations.
+                    </p>
+
+                    <a
+                        href="https://todhruvpawar-a11y.github.io/etfportfolioanalysis/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-link"
+                    >
+                        View Live Project →
+                    </a>
+
+                </article>
+
+
+                <!-- Cricket Project -->
+                <article class="project-card">
+
+                    <div class="project-number">
+                        02 / SPORTS ANALYTICS
+                    </div>
+
+                    <h3>
+                        Cricket Stats Tracker
+                    </h3>
+
+                    <p>
+                        Performance tracker for recording cricket
+                        match statistics, batting results, bowling
+                        figures, and career totals.
+                    </p>
+
+                    <a
+                        href="https://todhruvpawar-a11y.github.io/cricket-stats/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-link"
+                    >
+                        View Live Project →
+                    </a>
+
+                </article>
+
+
+                <!-- Personal Finance Project -->
+                <article class="project-card">
+
+                    <div class="project-number">
+                        03 / PERSONAL FINANCE
+                    </div>
+
+                    <h3>
+                        Personal Finance Tracker
+                    </h3>
+
+                    <p>
+                        Budgeting tool for tracking income, expenses,
+                        spending categories, and progress toward
+                        savings goals.
+                    </p>
+
+                    <a
+                        href="https://todhruvpawar-a11y.github.io/PersonalFinanceTracker/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-link"
+                    >
+                        View Live Project →
+                    </a>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+
+        <div class="container">
+
+            <div class="contact-box">
+
+                <div class="section-label">
+                    Contact
+                </div>
+
+                <h2 class="section-title">
+                    Let's Connect.
+                </h2>
+
+                <p class="contact-description">
+                    I'm always interested in connecting with people
+                    in finance, investments, analytics, and technology.
+                </p>
+
+                <div class="contact-buttons">
+
+                    <a
+                        href="https://github.com/todhruvpawar-a11y"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="button button-primary"
+                    >
+                        GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        © 2026 Dhruv Pawar · Personal Portfolio
+    </footer>
+
+</body>
+</html>
 ```
